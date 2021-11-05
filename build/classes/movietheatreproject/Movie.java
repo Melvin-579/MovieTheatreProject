@@ -13,17 +13,6 @@ public class Movie {
     String[] showTimes;
     int[] ticketsLeft;
     
-    String title2;
-    String[] showTimes2;
-    int[] ticketsLeft2;
-
-    public Movie(String title, String[] showTimes, int[] ticketsLeft) {
-        this.title = title;
-        this.showTimes = showTimes;
-        this.ticketsLeft = ticketsLeft;
-    }
-    
-    
     
     
 }
