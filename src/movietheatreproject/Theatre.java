@@ -10,43 +10,39 @@ package movietheatreproject;
  */
 public class Theatre {
     Movie[] shows;
+    String name;
 
-    public Theatre() {
-        shows= new Movie[3];
-        shows[0]=new Movie();
-        shows[0].showTimes=new String[] {"7:00pm", "9:30pm"};
-        shows[0].ticketsLeft=new int[] {150,150};
-        shows[0].title = "Halloween Kills";
-        shows[1]=new Movie();
-        shows[1].title="Eternals";
-        shows[1].showTimes=new String[] {"5:00pm","7:00pm","9:00pm"};
-        shows[1].ticketsLeft=new int[]{300,300,300};
-        shows[2]=new Movie();
-        shows[2].title="Last Night in Soho";
-        shows[2].showTimes=new String[] {"11:30pm"};
-        shows[2].ticketsLeft=new int[]{100};
-        //Scotiabank movies
+    public Theatre(String name) {
+        this.name=name;
     }
-
-public class Theatre2{
-    Movie[] shows2;
     
-    public Theatre2(){
-        shows2 = new Movie[3];
-        shows2[0] = new Movie();
-        shows2[0].showTimes2=new String[] {"7:15pm", "10:45pm"};
-        shows2[0].ticketsLeft2=new int[] {150,150};
-        shows2[0].title2 = "Suicide Squad";
-        shows2[1]=new Movie();
-        shows2[1].title2="Spiderman no way home";
-        shows2[1].showTimes2=new String[] {"5:30pm","8:20pm","11:25pm"};
-        shows2[1].ticketsLeft2=new int[]{300,300,300};
-        shows2[2]=new Movie();
-        shows2[2].title2="Demon Slayer: Infinite Train";
-        shows2[2].showTimes2=new String[] {"7:45pm","9:00pm"};
-        shows2[2].ticketsLeft2=new int[]{100};
+    public void displayShows(){
+        for (Movie m:shows){
+            m.DisplayTimes();
+        }
     }
-}
+    
+
+    
+//public class Theatre2{
+//    Movie[] shows2;
+//    
+//    public Theatre2(){
+//        shows2 = new Movie[3];
+//        shows2[0] = new Movie();
+//        shows2[0].showTimes2=new String[] {"7:15pm", "10:45pm"};
+//        shows2[0].ticketsLeft2=new int[] {150,150};
+//        shows2[0].title2 = "Suicide Squad";
+//        shows2[1]=new Movie();
+//        shows2[1].title2="Spiderman no way home";
+//        shows2[1].showTimes2=new String[] {"5:30pm","8:20pm","11:25pm"};
+//        shows2[1].ticketsLeft2=new int[]{300,300,300};
+//        shows2[2]=new Movie();
+//        shows2[2].title2="Demon Slayer: Infinite Train";
+//        shows2[2].showTimes2=new String[] {"7:45pm","9:00pm"};
+//        shows2[2].ticketsLeft2=new int[]{100};
+//    }
+//}
     
     public void displayShows(){
         int counter=1;
@@ -60,15 +56,6 @@ public class Theatre2{
         }
     }
     
-    public void displayShows2(){
-        int counter = 1;
-        for (Movie m:shows){
-            System.out.println(counter+": "+m.title2);
-            for (String s:m.showTimes2){
-                System.out.print(s+"\t");
-            }
-        }   System.out.println("\n");
-        counter++;
-    }
+    
     
 }

@@ -12,10 +12,7 @@ public class Movie {
     String title;
     String[] showTimes;
     int[] ticketsLeft;
-    
-    String title2;
-    String[] showTimes2;
-    int[] ticketsLeft2;
+
 
     public Movie(String title, String[] showTimes, int[] ticketsLeft) {
         this.title = title;
@@ -25,5 +22,7 @@ public class Movie {
     
     
     
-    
+    public void DisplayTimes(){
+        //loop through each showtime and print them
+    }
 }
