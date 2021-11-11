@@ -28,10 +28,24 @@ public class main {
         }
         System.out.println("Which theatre do you want? Enter the number");
         int choice=in.nextInt()-1;
+        t.get(choice).displayShows();
         
-            if(choice==1){
-            
+        System.out.println("What movie do you want to see?");
+        
+                    
+                }
+            } else {
+                int choice3 = in.nextInt()-1;
+                System.out.println();
             }
+//        System.out.println("Enter something");
+//        String input=in.nextLine();
+//        try{
+//            int value=Integer.parseInt(input);
+//            System.out.println("You entered an int with a value of "+value);
+//        } catch (NumberFormatException e){
+//            System.out.println("You entered a string with a value of "+input);
+//        }
         
 
     }

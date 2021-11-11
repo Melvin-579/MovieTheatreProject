@@ -24,5 +24,12 @@ public class Movie {
     
     public void DisplayTimes(){
         //loop through each showtime and print them
+        int counter = 1;
+        System.out.println(counter+": "+title);
+        for (String s:showTimes){
+            System.out.println(s+"\t");
+        }
+        System.out.println("\n");
+        counter++;
     }
 }

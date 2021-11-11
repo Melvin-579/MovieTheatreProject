@@ -44,17 +44,17 @@ public class Theatre {
 //    }
 //}
     
-    public void displayShows(){
-        int counter=1;
-        for (Movie m:shows){
-            System.out.println(counter+": "+m.title);
-            for (String s:m.showTimes){
-                System.out.print(s+"\t");
-            }
-            System.out.println("\n");
-            counter++;
-        }
-    }
+//    public void displayShows(){
+//        int counter=1;
+//        for (Movie m:shows){
+//            System.out.println(counter+": "+m.title);
+//            for (String s:m.showTimes){
+//                System.out.print(s+"\t");
+//            }
+//            System.out.println("\n");
+//            counter++;
+//        }
+//    }
     
     
     
